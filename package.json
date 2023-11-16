@@ -17,9 +17,10 @@
     "aws-sdk": "^2.1497.0",
     "dotenv": "^8.2.0",
     "fluent-ffmpeg": "^2.1.2",
+    "form-data": "^4.0.0",
     "moment": "^2.29.4",
     "moment-timezone": "^0.5.43",
-    "node-fetch": "^2.6.1",
+    "node-fetch": "^2.7.0",
     "yarn": "^1.22.19"
   }
 }

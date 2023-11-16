@@ -1,6 +1,8 @@
 require('dotenv').config();
 
 const { S3Client, ListObjectsCommand, CopyObjectCommand, DeleteObjectCommand, PutObjectAclCommand } = require("@aws-sdk/client-s3");
+const fetch = require('node-fetch');
+const FormData = require('form-data');
 const ffmpeg = require('fluent-ffmpeg');
 const moment = require('moment-timezone');
 const fs = require('fs');
@@ -14,8 +16,6 @@ const s3Client = new S3Client({
 });
 
 const listParams = { Bucket: process.env.AWS_BUCKETS };
-
-
 
 
 const getMetaDataFile = async (filePath) => {
